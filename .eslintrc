@@ -1,4 +1,14 @@
 {
-  "extends": ["eslint-config-unjs"],
-  "rules": {}
+  "extends": ["./config/recommended.cjs"],
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**"],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": ["./config/typescript.cjs"]
+    },
+    {
+      "files": ["**/*.js", "**/*.jsx"],
+      "extends": ["./config/javascript.cjs"]
+    }
+  ]
 }
