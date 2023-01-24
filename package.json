@@ -1,16 +1,17 @@
 {
   "name": "@srmcguirt/be-mapped",
-  "version": "0.0.0",
-  "description": "Javascript mapping utility functions.",
-  "repository": "srmcguirt/be-mapped",
-  "license": "MIT",
-  "sideEffects": false,
   "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.25.1",
+  "description": "Javascript mapping utility functions.",
+  "license": "MIT",
+  "repository": "srmcguirt/be-mapped",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -22,8 +23,8 @@
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs .",
-    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs .",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache . --fix",
     "prepack": "pnpm run build",
     "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
     "test": "pnpm lint && vitest run --coverage"
@@ -39,7 +40,6 @@
     "unbuild": "^1.1.1",
     "vitest": "^0.28.1"
   },
-  "packageManager": "pnpm@7.25.1",
   "publishConfig": {
     "access": "public"
   },
@@ -47,5 +47,8 @@
     "overrides": {
       "debug": ">=3.1.0"
     }
+  },
+  "dependencies": {
+    "defu": "^6.1.1"
   }
 }

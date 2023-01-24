@@ -5,7 +5,7 @@
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
 
-> Package description
+> Data mapping utilities for transforming data objects.
 
 ## Usage
 
@@ -26,10 +26,10 @@ Import:
 
 ```js
 // ESM
-import {} from "packageName";
+import { /* importName */ } from 'packageName'
 
 // CommonJS
-const {} = require("packageName");
+const { /* importName */ } = require('packageName')
 ```
 
 ## Development

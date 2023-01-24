@@ -1,14 +1,13 @@
 {
-  "extends": ["./config/recommended.cjs"],
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**"],
-  "overrides": [
-    {
-      "files": ["**/*.ts", "**/*.tsx"],
-      "extends": ["./config/typescript.cjs"]
-    },
-    {
-      "files": ["**/*.js", "**/*.jsx"],
-      "extends": ["./config/javascript.cjs"]
-    }
-  ]
+  "extends": ["@antfu"],
+  "rules": {
+    "no-console": "off",
+    "brace-style": ["error", "1tbs"],
+    "semi": ["error", "always"],
+    "curly": ["error", "all"],
+    "operator-linebreak": ["error", "before"],
+    // "prefer-arrow-callback": "off",
+    "@typescript-eslint/brace-style": ["error", "1tbs"],
+    "@typescript-eslint/semi": ["error", "always"]
+  }
 }

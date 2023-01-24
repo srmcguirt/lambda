@@ -8,11 +8,15 @@ specifiers:
   '@types/node': ^18.11.18
   '@vitest/coverage-c8': ^0.28.1
   changelogen: ^0.4.1
+  defu: ^6.1.1
   eslint: ^8.32.0
   pnpm: ^7.25.1
   typescript: ^4.9.4
   unbuild: ^1.1.1
   vitest: ^0.28.1
+
+dependencies:
+  defu: 6.1.1
 
 devDependencies:
   '@antfu/eslint-config': 0.34.1_7uibuqfxkfaozanbtbziikiqje
@@ -1393,7 +1397,6 @@ packages:
 
   /defu/6.1.1:
     resolution: {integrity: sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==}
-    dev: true
 
   /destr/1.2.2:
     resolution: {integrity: sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==}
